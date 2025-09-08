@@ -1,5 +1,5 @@
 CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: \
- /home/jh/Desktop/pathlab/apps/bench_single/main.cpp \
+ /home/jh/Desktop/forgit5/PathLab/apps/bench_single/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -173,14 +173,30 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc \
- /home/jh/Desktop/pathlab/include/pathlab/core/grid_map.hpp \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/ranges_algo.h \
+ /usr/include/c++/11/bits/ranges_algobase.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/ranges_util.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/jh/Desktop/pathlab/include/pathlab/io/scen_loader.hpp \
- /home/jh/Desktop/pathlab/include/pathlab/algorithms/dijkstra.hpp \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/core/grid_map.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/io/scen_loader.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/algorithms/dijkstra.hpp \
  /usr/include/c++/11/limits /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
@@ -205,19 +221,15 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/jh/Desktop/pathlab/include/pathlab/algorithms/ipathfinder.hpp \
- /home/jh/Desktop/pathlab/include/pathlab/queues/binary_heap.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/algorithms/ipathfinder.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/queues/binary_heap.hpp \
  /usr/include/c++/11/queue /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
- /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/functional \
- /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/optional \
- /home/jh/Desktop/pathlab/include/pathlab/queues/ipriority_queue.hpp
+ /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/optional \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/queues/ipriority_queue.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/algorithms/astar.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/util/heuristic_factory.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/util/heuristic_base.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/util/heuristic_manhattan.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/util/heuristic_euclidean.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/util/heuristic_octile.hpp

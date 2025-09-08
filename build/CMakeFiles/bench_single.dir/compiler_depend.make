@@ -219,12 +219,31 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
   /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
-  ../include/pathlab/core/grid_map.hpp \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/ranges_util.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  ../include/pathlab/core/grid_map.hpp \
   ../include/pathlab/io/scen_loader.hpp \
   ../include/pathlab/algorithms/dijkstra.hpp \
   /usr/include/c++/11/limits \
@@ -262,36 +281,59 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/stl_queue.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/optional \
-  ../include/pathlab/queues/ipriority_queue.hpp
+  ../include/pathlab/queues/ipriority_queue.hpp \
+  ../include/pathlab/algorithms/astar.hpp \
+  ../include/pathlab/util/heuristic_factory.hpp \
+  ../include/pathlab/util/heuristic_base.hpp \
+  ../include/pathlab/util/heuristic_manhattan.hpp \
+  ../include/pathlab/util/heuristic_euclidean.hpp \
+  ../include/pathlab/util/heuristic_octile.hpp
 
+
+../include/pathlab/util/heuristic_euclidean.hpp:
+
+../include/pathlab/util/heuristic_base.hpp:
+
+../include/pathlab/util/heuristic_factory.hpp:
+
+../include/pathlab/util/heuristic_octile.hpp:
+
+../include/pathlab/algorithms/astar.hpp:
 
 /usr/include/c++/11/optional:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/usr/include/c++/11/unordered_map:
-
-/usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/c++/11/deque:
+
+/usr/include/c++/11/queue:
+
+../include/pathlab/queues/binary_heap.hpp:
+
+/usr/include/c++/11/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/tr1/poly_hermite.tcc:
+
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/11/tr1/hypergeometric.tcc:
+
+/usr/include/c++/11/tr1/exp_integral.tcc:
+
+/usr/include/c++/11/tr1/ell_integral.tcc:
+
+/usr/include/c++/11/tr1/bessel_function.tcc:
+
+/usr/include/c++/11/tr1/special_function_util.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
@@ -331,8 +373,6 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/libintl.h:
 
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/c++/11/bits/stl_deque.h:
@@ -349,13 +389,13 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/localefwd.h:
 
-/usr/include/c++/11/tr1/hypergeometric.tcc:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/11/iomanip:
 
 /usr/include/c++/11/cctype:
+
+/usr/include/c++/11/unordered_map:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -367,6 +407,8 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
+/usr/include/c++/11/bits/unordered_map.h:
+
 /usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
@@ -377,15 +419,17 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/stl_construct.h:
 
-/usr/include/c++/11/tr1/exp_integral.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/c++/11/bits/ranges_algo.h:
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/c++/11/new:
+
+/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
@@ -429,15 +473,13 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/invoke.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
 /usr/include/c++/11/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/c++/11/functional:
-
-/usr/include/linux/errno.h:
 
 /usr/include/ctype.h:
 
@@ -461,6 +503,8 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
+/usr/include/c++/11/algorithm:
+
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/include/c++/11/bits/stl_function.h:
@@ -483,8 +527,6 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/c++/11/queue:
-
 /usr/include/c++/11/type_traits:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -499,6 +541,12 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/linux/errno.h:
+
+/usr/include/c++/11/functional:
+
+../include/pathlab/util/heuristic_manhattan.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -508,6 +556,12 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/c++/11/tr1/legendre_function.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 ../include/pathlab/algorithms/dijkstra.hpp:
 
@@ -537,8 +591,6 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/stl_algobase.h:
 
-../include/pathlab/queues/binary_heap.hpp:
-
 /usr/include/c++/11/bits/nested_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -553,19 +605,13 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-../include/pathlab/io/scen_loader.hpp:
-
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/11/cstdlib:
 
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar2.h:
-
-/usr/include/c++/11/bits/specfun.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -611,21 +657,15 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/iterator_concepts.h:
 
+/usr/include/c++/11/bits/ranges_algobase.h:
+
 /usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/c++/11/ext/aligned_buffer.h:
-
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -641,6 +681,8 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/cwctype:
 
+/usr/include/c++/11/pstl/execution_defs.h:
+
 /usr/include/c++/11/bits/algorithmfwd.h:
 
 /usr/include/c++/11/iosfwd:
@@ -648,6 +690,8 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 /usr/include/c++/11/initializer_list:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/11/iterator:
 
 /usr/include/c++/11/bits/range_access.h:
 
@@ -695,8 +739,6 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/c++/11/tr1/ell_integral.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -707,9 +749,9 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
-/usr/include/c++/11/bits/node_handle.h:
-
 /usr/include/c++/11/iostream:
+
+/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -723,11 +765,11 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
 /usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/c++/11/tr1/bessel_function.tcc:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
@@ -737,17 +779,9 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/locale_facets.h:
 
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/c++/11/istream:
 
@@ -763,13 +797,47 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/stl_relops.h:
 
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/c++/11/array:
+
 /usr/include/c++/11/bits/uses_allocator.h:
+
+../include/pathlab/algorithms/ipathfinder.hpp:
+
+/usr/include/c++/11/bits/quoted_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/math.h:
 
 /usr/include/c++/11/sstream:
+
+../include/pathlab/io/scen_loader.hpp:
+
+/usr/include/c++/11/bits/ranges_util.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/c++/11/vector:
 
@@ -785,8 +853,6 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/bits/vector.tcc:
 
-/usr/include/c++/11/limits:
-
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/parse_numbers.h:
@@ -800,27 +866,3 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
-/usr/include/c++/11/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/11/bits/quoted_string.h:
-
-../include/pathlab/algorithms/ipathfinder.hpp:
