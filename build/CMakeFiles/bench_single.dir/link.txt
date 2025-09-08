@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o -o bench_single  libpathlab_core.a 
