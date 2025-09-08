@@ -1,0 +1,16 @@
+./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen
+
+
+./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen --astar
+
+
+./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen --astar --heuristic octile
+
+
+./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen --astar --heuristic manhattan --no-diag
+
+
+./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen --astar --heuristic euclidean
+
+
+./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen --astar --heuristic zero

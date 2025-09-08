@@ -6,6 +6,8 @@ namespace pathlab {
 
 struct SearchStats {
   uint64_t expanded{0};
+  uint64_t pushes{0};  
+  uint64_t pops{0};    
   double millis{0.0};
 };
 
