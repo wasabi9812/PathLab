@@ -234,4 +234,6 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: \
  /home/jh/Desktop/forgit5/PathLab/include/pathlab/util/heuristic_euclidean.hpp \
  /home/jh/Desktop/forgit5/PathLab/include/pathlab/util/heuristic_octile.hpp \
  /home/jh/Desktop/forgit5/PathLab/include/pathlab/dmm/sssp.hpp \
- /home/jh/Desktop/forgit5/PathLab/include/pathlab/dmm/efficient_ds.hpp
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/dmm/efficient_ds.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/algorithms/dijkstra_po.hpp \
+ /home/jh/Desktop/forgit5/PathLab/include/pathlab/queues/po_queue.hpp
