@@ -1,9 +1,0 @@
-Map: 256x256
-Scenarios: 1000
-Case[0] FOUND cost=111.941 expanded=1691 pushes=2901 pops=2421 time_ms=0.354
-Case[1] FOUND cost=93.142 expanded=551 pushes=1041 pops=663 time_ms=0.096
-Case[2] FOUND cost=58.042 expanded=369 pushes=678 pops=542 time_ms=0.065
-Case[3] FOUND cost=96.284 expanded=334 pushes=631 pops=338 time_ms=0.065
-Case[4] FOUND cost=155.267 expanded=604 pushes=1258 pops=611 time_ms=0.115
-
-Summary (1000/1000 solved) algo=astar heuristic=octile diag=on avg_cost=152.526 avg_expanded=3208.530 avg_pushes=5399.719 avg_pops=4813.763 avg_time_ms=0.626

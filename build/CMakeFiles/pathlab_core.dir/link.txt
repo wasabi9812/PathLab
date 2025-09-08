@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpathlab_core.a CMakeFiles/pathlab_core.dir/src/core/grid_map.cpp.o CMakeFiles/pathlab_core.dir/src/io/scen_loader.cpp.o
-/usr/bin/ranlib libpathlab_core.a

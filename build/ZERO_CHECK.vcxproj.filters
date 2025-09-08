@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wasab\Desktop\graphtest\PathLab\build\CMakeFiles\1b87173a2b5b645f1243454e8aeae8ba\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{21DBDD85-F040-30B7-9505-FE4F046F7FEF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

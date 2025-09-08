@@ -1,0 +1,10 @@
+^C:\USERS\WASAB\DESKTOP\GRAPHTEST\PATHLAB\BUILD\CMAKEFILES\1B87173A2B5B645F1243454E8AEAE8BA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/wasab/Desktop/graphtest/PathLab -BC:/Users/wasab/Desktop/graphtest/PathLab/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/wasab/Desktop/graphtest/PathLab/build/pathlab.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
