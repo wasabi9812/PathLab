@@ -288,7 +288,9 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
   ../include/pathlab/util/heuristic_base.hpp \
   ../include/pathlab/util/heuristic_manhattan.hpp \
   ../include/pathlab/util/heuristic_euclidean.hpp \
-  ../include/pathlab/util/heuristic_octile.hpp
+  ../include/pathlab/util/heuristic_octile.hpp \
+  ../include/pathlab/dmm/sssp.hpp \
+  ../include/pathlab/dmm/efficient_ds.hpp
 
 
 ../include/pathlab/util/heuristic_euclidean.hpp:
@@ -455,6 +457,8 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 
 /usr/include/c++/11/string:
 
+../include/pathlab/dmm/efficient_ds.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/c++/11/tuple:
@@ -526,6 +530,8 @@ CMakeFiles/bench_single.dir/apps/bench_single/main.cpp.o: ../apps/bench_single/m
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+../include/pathlab/dmm/sssp.hpp:
 
 /usr/include/c++/11/type_traits:
 

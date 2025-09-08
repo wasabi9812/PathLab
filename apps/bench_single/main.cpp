@@ -9,6 +9,7 @@
 #include "pathlab/algorithms/dijkstra.hpp"
 #include "pathlab/algorithms/astar.hpp"
 #include "pathlab/util/heuristic_factory.hpp"
+#include "pathlab/dmm/sssp.hpp"
 
 static inline bool eq(const std::string& a, const char* b) {
     return a == b;
@@ -16,27 +17,37 @@ static inline bool eq(const std::string& a, const char* b) {
 
 int main(int argc, char** argv) {
     if (argc < 3) {
-        std::cerr << "usage: bench_single <map_file> <scen_file> [--astar] [--heuristic H] [--no-diag] [--print N] [--limit N]\n";
-        std::cerr << "  H: auto|manhattan|octile|euclidean|zero (default: auto)\n";
+        std::cerr
+          << "usage: bench_single <map_file> <scen_file>\n"
+          << "       [--astar] [--heuristic H] [--no-diag]\n"
+          << "       [--dmm] [--dmm-block N]\n"
+          << "       [--print N] [--limit N]\n"
+          << "  H: auto|manhattan|octile|euclidean|zero (default: auto)\n";
         return 1;
     }
     std::string map_path  = argv[1];
     std::string scen_path = argv[2];
 
-    // ---- 옵션 파싱 (간단) ----
+    // ---- 옵션 파싱 ----
     bool use_astar   = false;
+    bool use_dmm     = false;      // ★ 추가
     bool allow_diag  = true;
+    bool use_astar_po = false;
     std::string hname = "auto";
-    size_t print_first = 5;         // 앞 N개 케이스 로그
-    size_t limit_cases = 0;         // 0이면 전부
+    size_t print_first = 5;
+    size_t limit_cases = 0;
+    size_t dmm_block   = 1024;     // ★ 추가
 
     for (int i = 3; i < argc; ++i) {
         std::string a = argv[i];
-        if (eq(a, "--astar")) use_astar = true;
+        if      (eq(a, "--astar")) use_astar = true;
+        else if (eq(a, "--dmm"))   use_dmm   = true;                    // ★
         else if (eq(a, "--no-diag")) allow_diag = false;
         else if (eq(a, "--heuristic") && i+1 < argc) { hname = argv[++i]; }
-        else if (eq(a, "--print") && i+1 < argc) { print_first = std::stoul(argv[++i]); }
-        else if (eq(a, "--limit") && i+1 < argc) { limit_cases = std::stoul(argv[++i]); }
+        else if (eq(a, "--print") && i+1 < argc)     { print_first = std::stoul(argv[++i]); }
+        else if (eq(a, "--limit") && i+1 < argc)     { limit_cases = std::stoul(argv[++i]); }
+        else if (eq(a, "--dmm-block") && i+1 < argc) { dmm_block   = std::stoul(argv[++i]); } // ★
+        else if (eq(a, "--astar-po")) use_astar_po = true;
     }
 
     // ---- 로드 ----
@@ -55,7 +66,7 @@ int main(int argc, char** argv) {
     std::cout << "Scenarios: " << sl.scenarios().size() << "\n";
 
     // ---- 누적지표 ----
-    size_t solved = 0;
+    size_t   solved = 0;
     double   sum_cost = 0.0, sum_ms = 0.0;
     uint64_t sum_expanded = 0, sum_pushes = 0, sum_pops = 0;
 
@@ -70,10 +81,17 @@ int main(int argc, char** argv) {
         const auto& s = sl.scenarios()[i];
 
         pathlab::PathResult res;
-        if (use_astar) {
+        if (use_dmm) {
+            pathlab::dmm::SSSP::Params P; P.block_size = dmm_block;
+            pathlab::dmm::SSSP alg(P);
+            res = alg.solve(map, s.start.x, s.start.y, s.goal.x, s.goal.y, allow_diag);
+        } else if (use_astar) {
             pathlab::AStar ast;
             res = ast.solve(map, s.start.x, s.start.y, s.goal.x, s.goal.y, allow_diag, H);
-        } else {
+        }else if (use_astar_po) {
+            pathlab::AStar astpo;
+            res = astpo.solve(map, s.start.x, s.start.y, s.goal.x, s.goal.y, allow_diag, H);
+        }else {
             pathlab::Dijkstra dj;
             res = dj.solve(map, s.start.x, s.start.y, s.goal.x, s.goal.y, allow_diag);
         }
@@ -98,10 +116,14 @@ int main(int argc, char** argv) {
 
     // ---- 요약 ----
     const size_t n = n_run;
+    std::string algo_name =use_dmm ? "dmm" : (use_astar_po ? "astar-po" : (use_astar ? "astar" : "dijkstra"));
+    std::string heur_name = (use_astar ? H.name : std::string("n/a"));
+
     std::cout << "\nSummary (" << solved << "/" << n << " solved)"
-              << " algo=" << (use_astar ? "astar" : "dijkstra")
-              << " heuristic=" << (use_astar ? H.name : std::string("n/a"))
+              << " algo=" << algo_name
+              << " heuristic=" << heur_name
               << " diag=" << (allow_diag ? "on" : "off")
+              << (use_dmm ? (" block=" + std::to_string(dmm_block)) : "")
               << " avg_cost="     << (solved ? sum_cost/solved : 0.0)
               << " avg_expanded=" << (n ? (double)sum_expanded/n : 0.0)
               << " avg_pushes="   << (n ? (double)sum_pushes/n   : 0.0)

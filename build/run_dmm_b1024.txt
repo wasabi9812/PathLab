@@ -1,0 +1,9 @@
+Map: 256x256
+Scenarios: 1000
+Case[0] FOUND cost=111.941 expanded=17899 pushes=0 pops=0 time_ms=1.594
+Case[1] FOUND cost=93.142 expanded=8848 pushes=0 pops=0 time_ms=0.750
+Case[2] FOUND cost=58.042 expanded=5056 pushes=0 pops=0 time_ms=0.439
+Case[3] FOUND cost=96.284 expanded=4813 pushes=0 pops=0 time_ms=0.306
+Case[4] FOUND cost=155.267 expanded=15548 pushes=0 pops=0 time_ms=1.617
+
+Summary (1000/1000 solved) algo=dmm heuristic=n/a diag=on block=1024 avg_cost=152.607 avg_expanded=22637.113 avg_pushes=0.000 avg_pops=0.000 avg_time_ms=1.786

@@ -1,0 +1,9 @@
+Map: 256x256
+Scenarios: 1000
+Case[0] FOUND cost=111.941 expanded=17642 pushes=17983 pops=17643 time_ms=1.989
+Case[1] FOUND cost=93.142 expanded=8019 pushes=8203 pops=8020 time_ms=1.391
+Case[2] FOUND cost=58.042 expanded=4952 pushes=5124 pops=4953 time_ms=0.795
+Case[3] FOUND cost=96.284 expanded=4616 pushes=4718 pops=4617 time_ms=0.679
+Case[4] FOUND cost=155.267 expanded=18504 pushes=18796 pops=18505 time_ms=2.853
+
+Summary (1000/1000 solved) algo=dijkstra heuristic=n/a diag=on avg_cost=152.526 avg_expanded=23838.107 avg_pushes=24131.085 avg_pops=23839.107 avg_time_ms=2.554

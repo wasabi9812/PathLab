@@ -14,3 +14,19 @@
 
 
 ./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen --astar --heuristic zero
+
+# A* (옥타일) + 부분순서 큐(POQueue)
+./bench_single ../data/maps/Berlin_1_256.map ../data/scenarios/Berlin_1_256-random-1.scen --astar-po --heuristic octile
+
+
+
+MAP=../data/maps/Berlin_1_256.map
+SCEN=../data/scenarios/Berlin_1_256-random-1.scen
+
+# 빠른 샘플 비교 (200개만)
+./bench_single $MAP $SCEN --dmm --dmm-block 256  --limit 200 > dmm_b256.txt
+./bench_single $MAP $SCEN --dmm --dmm-block 512  --limit 200 > dmm_b512.txt
+./bench_single $MAP $SCEN --dmm --dmm-block 1024 --limit 200 > dmm_b1024.txt
+
+# Summary만 비교
+egrep "Summary" dmm_b*.txt
